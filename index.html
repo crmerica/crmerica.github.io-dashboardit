@@ -4,7 +4,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style> 
-  .container {
+    .container {
   position: relative;
 }
 .text-block {
@@ -15,6 +15,21 @@
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+  
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
   
 .top-right {
@@ -29,12 +44,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-  
-div.ex1 {
-  background-color: #FFFFFF;
-  width: 500px;
-  height: 200px;
-  overflow: scroll;
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 800px;
+  position: center;
+  resize: both;
+  overflow: auto;
 }
   
 .topnav {
@@ -79,7 +95,6 @@ div.ex1 {
     border: 1px solid #ccc;
   }
 }
-  
 </style>
 </head>
     <html>
@@ -92,7 +107,7 @@ div.ex1 {
 <body>
   <body background="http://i68.tinypic.com/whbjh1.png.jpg">
     <h1 align="center"><font face="palatino" color="#FFFFFF">CRM ohjeet kokonaisuudessaan</font></h1>
-  <div align="center"> 
+  <div align="center"><div class="text-block">  
 <div class="topnav">
   <a class="active" a href="https://crmerica.github.io/crmerica.github.io-koko-ohjeet/">Koti</a>
   <a href="https://crmerica.github.io">CRM-botti</a>
